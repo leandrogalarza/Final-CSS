@@ -1,0 +1,302 @@
+body{
+	background-color: #02010a;
+}
+.contenedor{
+	font-family: 'Dancing Script', cursive;
+  	color:white;
+  	font-size: 35px;
+  	width: 900px;
+  	margin: 0 auto;
+  	margin-top: 5px;
+}
+
+.encabezado{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	background-color:  #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	width: 900px;
+	height: auto;
+	animation: efecto 2s;
+}
+
+#titulo{
+	width: 50%;
+	font-size: 1.2em;
+	text-shadow: 0 0 2px #02010a;
+	float: left;
+}
+
+#links{
+	width: 50%;
+	text-align: right;
+	font-size: 0.8em;
+	line-height: 60px;
+}
+
+#links a{
+	text-decoration: none;
+	color:white;
+}
+
+@-webkit-keyframes efecto{
+	0%{margin-top: 150%;}
+    60%{margin-top: -5%;}
+    100%{margin-top: 0%;}
+}
+
+
+.piedepagina{
+	width: 900px;
+	height: auto;
+	background-color: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	color: black;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-size: 0.5em;
+}
+
+.piedepagina >div{
+	margin: 0 auto;
+	padding: 0 auto;
+	padding-left: 5px;
+	width: 24%;
+	text-align: left;
+}
+
+.piedepagina #iconos img{
+	width: 20px;
+	border-radius: 5px;
+}
+
+.piedepagina a{
+	text-decoration: none;
+	color: black;
+}
+
+#iconos >p{
+	line-height: 1px;
+}
+
+#derechos img{
+	width: 20px;
+}
+
+.contenido1 {
+	background-color: #82c3a6;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+#imagen1{
+	width: 60%;
+	height: auto;
+	margin: 20px auto;
+} 
+
+.contenido2 {
+	background-color: #d5c75f;
+	border: 1px solid black;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+}
+
+.contenido2 figcaption{
+	text-align: center;
+	color: black;
+	font-size: 0.9em;
+}
+
+.contenido2 div{
+	width: 45%;
+	margin: 0 auto;
+	
+}
+
+.contenido2 [id^='imag']{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	
+	
+}
+
+.contenido2 a{
+	color: black;
+}
+
+.contenedor img[src*='.jpg']{
+-webkit-box-shadow: 2px 2px 2px #02010a;
+-moz-box-shadow: 2px 2px 2px #02010a;
+box-shadow: 2px 2px 2px #02010a;
+	
+}
+
+#imagen2{
+border: 2px solid black;
+
+-webkit-transition: -webkit-transform, 2s;
+-moz-transition: -moz-transform, 2s;
+transition: box-shadow, transform, 2s;
+}
+
+#imagen2:hover{
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+transform: rotate(10deg);
+-webkit-box-shadow: 2px 2px 5px #82c3a6;
+-moz-box-shadow: 2px 2px 5px #82c3a6;
+box-shadow: 2px 2px 5px #82c3a6;
+}
+
+#imagen3{
+border: 2px solid black;
+box-shadow: 2px 2px 2px #02010a;
+transition: translate, 2s;
+-webkit-transition: translate, 2s ;
+-moz-transition: box-shadow, translate, 2s;
+}
+
+#imagen3:hover{
+transform: translate(90px, -5px);
+-webkit-transform: translate(90px, -5px);
+-moz-transform: translate(90px, -5px);
+box-shadow: 2px 2px 2px #82c3a6;
+-webkit-box-shadow: 2px 2px 2px #82c3a6;
+-moz-box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.contenido3{
+	background-color: #d5c75f;
+	border: 1px solid black;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.contenido3 div{
+	width: 30%;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top: 10px;
+}
+
+.contenido3 img{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto; 
+}
+
+.contenido3 #foto1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.contenido3 :nth-child(even){
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.contenido3 #foto3{
+	-webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+@media (max-width: 900px){
+	.contenedor{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+  	.encabezado{
+  		width: 100%;
+  		height: auto;
+  	}
+
+  	#titulo{
+  		width: 100%;
+  		text-align: center;
+  	}
+
+  	#links{
+  		width: 100%;
+  		text-align: center;
+  	}
+
+  	.piedepagina{
+  		width: 100%;
+  	}
+
+  	.piedepagina >div{
+	margin: 0 auto;
+	padding: 0 auto;
+	padding-left: 5px;
+	width: 100%;
+	text-align: left;
+	}
+
+	.piedepagina p{
+		font-size: 75%;
+	}
+	
+	.contenido1{
+		width: 100%;
+	}
+
+	.contenido1 div{
+		width: 100%;
+	}
+
+	#imagen1{
+		width: 83%;
+		height: 83%;
+	}
+	
+	.contenido2{
+		width: 100%;
+	}
+
+	.contenido2 div{
+		width: 100%;
+		margin: 0 auto;
+		padding: 30px;
+	}
+
+	#imagen2{
+		width: 100%;
+		margin: 0 auto;
+	}
+		
+	#imagen3{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.contenido3{
+		width: 100%;
+	}
+
+	.contenido3 div{
+		width: 90%;
+	}
+}
